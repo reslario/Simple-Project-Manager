@@ -1,0 +1,152 @@
+.root * {
+	-fx-font-smoothing-type: gray;
+}
+.backpane {
+	-fx-background-color: #1c1c1c;
+	-fx-pref-width: 1190;
+}
+.tab {
+	-fx-background-color: #121212;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0, 0, 0, 0;
+	-fx-border-style: none;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+	-fx-pref-width: 367px;
+	-fx-pref-height: 100px;
+	-fx-padding: 15 400 20 0;
+}
+.tab:selected, .tab:pressed {
+	-fx-background-color: #1c1c1c;
+	-fx-border-style: none;
+	-fx-border-radius: 0;
+}
+.tab:selected .tab-label {
+	-fx-text-fill: #eeeeee;
+}
+.tab-label {
+	-fx-pref-width: 367px;
+	-fx-text-fill: gray;
+	-fx-font-size: 50px;
+}
+.tab-pane {
+	-fx-background-color: #1c1c1c;
+	-fx-tab-min-height: 150;
+    -fx-tab-max-height: 150;
+}
+.tab-header-area {
+	-fx-padding: 0;
+}
+.tab-header-background {
+	-fx-background-color: #121212;
+}
+.tab-down-button {
+	-fx-padding: 0;
+}
+
+.tab-down-button .arrow {
+	-fx-padding: 0;
+}
+.scroll-pane {
+	-fx-pref-width: 1200;
+	-fx-pref-height: 675;
+	-fx-background-color: transparent;
+	-fx-border-width: 0;
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.scroll-pane > .viewport {
+	-fx-background-color: #1c1c1c;
+}
+.v-box {
+	-fx-background-color: #1c1c1c;
+}
+.pane {
+	-fx-background-color: #232323;
+}
+.label, .button {
+	-fx-text-fill: #eeeeee;
+}
+.title {
+	-fx-font-size: 32;
+	-fx-pref-width: 600;
+}
+.description {
+	-fx-font-size: 16;
+	-fx-pref-width: 725;
+	-fx-max-height: 90;
+}
+.finished {
+	-fx-font-size: 32;
+	-fx-background-color: TRANSPARENT;
+}
+.project-presence {
+	-fx-text-fill: gray;
+	-fx-font-size: 20;
+}
+.edit-label {
+	-fx-font-size: 33;
+}
+.button {
+	-fx-border-radius: 0;
+	-fx-border-style: none;
+	-fx-background-radius: 0;
+}
+.edit {
+	-fx-fill: #333333;
+}
+.edit:pressed {
+	-fx-background-color: #282828;
+}
+.add {
+	-fx-background-color: #00A813;
+	-fx-font-size: 42;
+}
+.startworking {
+	-fx-background-color: #00A813;
+	-fx-font-size: 22;
+	-fx-font-weight: bold;
+	-fx-pref-width: 220;
+	-fx-pref-height: 75;
+}
+.startworking:pressed, .add:pressed {
+	-fx-background-color: #00770B;
+}
+.deactivate, .delete {
+	-fx-pref-width: 75;
+	-fx-pref-height: 75;
+	-fx-background-color: #A00000;
+}
+.delete {
+	-fx-font-size: 31;
+}
+.deactivate:pressed, .delete:pressed {
+	-fx-background-color: #770000;
+}
+.movetoactive {
+	-fx-background-color: #0068A0;
+	-fx-font-size: 20;
+	-fx-font-weight: bold;
+	-fx-text-alignment: center;
+	-fx-pref-width: 220;
+	-fx-pref-height: 75;
+}
+.movetoactive:pressed, .pause:pressed {
+	-fx-background-color: #00517C;
+}
+.pause {
+	-fx-background-color: #0068A0;
+	-fx-pref-width: 75;
+	-fx-pref-height: 75;
+	-fx-font-size: 33;
+	-fx-font-weight: bold;
+}
+.timespent {
+	-fx-font-size: 16;
+	-fx-pref-width: 220;
+	-fx-pref-height: 21;
+}
+.timespent-big {
+	-fx-font-size: 20;
+	-fx-pref-width: 200;
+}

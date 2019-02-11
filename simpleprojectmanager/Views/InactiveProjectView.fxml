@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+
+<fx:root prefHeight="200.0" prefWidth="1150.0" styleClass="pane" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <Label fx:id="titleLbl" layoutX="40.0" layoutY="22.0" styleClass="title" text="Title" />
+      <Label fx:id="descLbl" layoutX="40.0" layoutY="83.0" maxWidth="-Infinity" prefWidth="750.0" styleClass="description" text="Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla massa a ipsum tincidunt, iaculis." wrapText="true" />
+      <Button layoutX="779.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#activateProject" prefWidth="250.0" styleClass="movetoactive" text="Move to active projects" wrapText="true" />
+      <Button layoutX="1022.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#removeProject" prefHeight="75.0" prefWidth="75.0" styleClass="delete" text="❌" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="timespentLbl" alignment="CENTER" layoutX="779.0" layoutY="154.0" styleClass="timespent" text="12 hours spent so far" textAlignment="CENTER" />
+   <Polygon layoutX="1086.0" layoutY="48.0" onMouseClicked="#editProject" points="-16.068603515625, -48.0, 64.0, 32.93145751953125, 64.0, -48.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="edit" />
+   <Label alignment="CENTER_RIGHT" layoutX="1105.0" layoutY="-31.0" mouseTransparent="true" prefHeight="89.0" prefWidth="62.0" rotate="135.0" styleClass="edit-label" text="✏" textAlignment="CENTER" />
+</fx:root>

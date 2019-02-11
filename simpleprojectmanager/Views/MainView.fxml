@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane prefHeight="675.0" prefWidth="259.0" styleClass="backpane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleprojectmanager.Views.MainView">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Working On">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <ScrollPane fx:id="workingOnScp" fitToWidth="true" hbarPolicy="NEVER" layoutX="-20.0" layoutY="14.0" maxHeight="565.0" pannable="true" prefHeight="565.0" vbarPolicy="NEVER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <content>
+                              <VBox fx:id="workingonVbx" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="1150.0" spacing="20.0" translateX="25.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets></VBox>
+                           </content>
+                        </ScrollPane>
+                        <Label fx:id="workinOnPresenceLbl" alignment="CENTER" styleClass="project-presence" text="No projects being worked on" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Active">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <ScrollPane fx:id="activeScp" fitToWidth="true" hbarPolicy="NEVER" layoutX="-20.0" layoutY="14.0" maxHeight="565.0" pannable="true" prefHeight="565.0" vbarPolicy="NEVER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <content>
+                              <VBox fx:id="activeVbx" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="1150.0" spacing="20.0" translateX="25.0" />
+                           </content>
+                        </ScrollPane>
+                        <Label fx:id="activePresenceLbl" alignment="CENTER" styleClass="project-presence" text="No active projects" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Inactive">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <ScrollPane fx:id="inactiveScp" fitToWidth="true" hbarPolicy="NEVER" layoutX="-20.0" layoutY="14.0" maxHeight="565.0" pannable="true" prefHeight="565.0" vbarPolicy="NEVER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <content>
+                              <VBox fx:id="inactiveVbx" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="1150.0" spacing="20.0" translateX="25.0" />
+                           </content>
+                        </ScrollPane>
+                        <Label fx:id="inactivePresenceLbl" alignment="CENTER" styleClass="project-presence" text="No inactive projects" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="1100.0" mnemonicParsing="false" onAction="#addProject" prefHeight="99.0" prefWidth="100.0" styleClass="add" text="➕" />
+   </children>
+</Pane>

@@ -1,0 +1,36 @@
+.pane {
+	-fx-background-color: #121212;
+}
+.text-field, .text-area, .text-area .content {
+	-fx-background-color: #1c1c1c;
+	-fx-border-radius: 0;
+	-fx-border-style: none;
+	-fx-background-radius: 0;
+	-fx-text-fill: #eeeeee;
+	-fx-font-size: 22;
+}
+.text-area .scroll-bar {
+	-fx-background-color: #1c1c1c;
+}
+.text-area .scroll-bar .thumb {
+	-fx-background-color: #333333;
+	-fx-background-radius: 0;
+}
+.scroll-bar:vertical .increment-button:hover, .scroll-bar:vertical .decrement-button:hover {
+	-fx-background-color:transparent;
+}
+.scroll-bar:vertical .increment-arrow, .scroll-bar:vertical .decrement-arrow {
+	-fx-background-color: #797979;
+}
+.confirm {
+	-fx-border-radius: 0;
+	-fx-border-style: none;
+	-fx-background-radius: 0;
+	-fx-background-color: #00A813;
+	-fx-font-size: 22;
+	-fx-text-fill: #eeeeee;
+	-fx-font-weight: bold;
+}
+.confirm:pressed {
+	-fx-background-color: #00770B;
+}

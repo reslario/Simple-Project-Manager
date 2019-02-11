@@ -1,0 +1,32 @@
+.button {
+	-fx-border-radius: 0;
+	-fx-border-style: none;
+	-fx-background-radius: 0;
+}
+.yes, .no {
+	-fx-pref-width: 100;
+	-fx-pref-height: 33;
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+}
+.yes {
+	-fx-background-color: #00A813;
+}
+.no {
+	-fx-background-color: #A00000;
+}
+.pane {
+	-fx-background-color: #232323;
+}
+.label, .button {
+	-fx-text-fill: #eeeeee;
+}
+.question {
+	-fx-font-size: 20;
+}
+.yes:pressed {
+	-fx-background-color: #00770B;
+}
+.no:pressed {
+	-fx-background-color: #770000;
+}

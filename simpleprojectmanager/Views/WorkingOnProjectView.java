@@ -19,7 +19,7 @@ public class WorkingOnProjectView extends ProjectView {
         try {
             loader.load();
         } catch (IOException e) {
-            System.out.println("oof");
+            e.printStackTrace();
         }
 
         viewModel = new WorkingOnProjectViewModel(project);

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 public class ProjectManager {
 
-    private static ProjectManager pm = new ProjectManager();;
+    private static ProjectManager pm = new ProjectManager();
 
     private final ArrayList<Project> projects = new ArrayList<>();
     private static final Path path = Paths.get(".projects");

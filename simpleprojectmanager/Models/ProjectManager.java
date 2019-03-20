@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 public class ProjectManager {
 
-    private static ProjectManager pm;
+    private static ProjectManager pm = new ProjectManager();;
 
     private final ArrayList<Project> projects = new ArrayList<>();
     private static final Path path = Paths.get(".projects");
@@ -29,8 +29,6 @@ public class ProjectManager {
     }
 
     public static ProjectManager getInstance() {
-        if (pm == null)
-            pm = new ProjectManager();
         return pm;
     }
 
@@ -48,7 +46,7 @@ public class ProjectManager {
         try {
             Files.write(path, String.join("\n", projects.stream().map(Project::toString).toArray(String[]::new)).getBytes());
         } catch (IOException e) {
-            System.out.println("oof");
+            e.printStackTrace();
         }
     }
 
@@ -59,7 +57,7 @@ public class ProjectManager {
             try {
                 sProjects = Files.readAllLines(path);
             } catch (IOException e) {
-                System.out.println("oof");
+                e.printStackTrace();
             }
         }
 
